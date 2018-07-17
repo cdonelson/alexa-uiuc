@@ -1,0 +1,292 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "library checker",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "SampleQuestionsIntent",
+                    "samples": [
+                        "sample question",
+                        "sample questions"
+                    ]
+                },
+                {
+                    "name": "AskCatalogIntent",
+                    "slots": [],
+                    "samples": [
+                        "catalog"
+                    ]
+                },
+                {
+                    "name": "AskBasicInfoIntent",
+                    "slots": [
+                        {
+                            "name": "library",
+                            "type": "LIBRARY"
+                        }
+                    ],
+                    "samples": [
+                        "information {library}",
+                        "{library} information",
+                        "information of {library}"
+                    ]
+                },
+                {
+                    "name": "AskNextSevenDaysIntent",
+                    "slots": [
+                        {
+                            "name": "library",
+                            "type": "LIBRARY"
+                        }
+                    ],
+                    "samples": [
+                        "{library} next seven days",
+                        "next seven days {library}",
+                        "next seven days of {library}"
+                    ]
+                },
+                {
+                    "name": "AskWithDateIntent",
+                    "slots": [
+                        {
+                            "name": "date",
+                            "type": "AMAZON.DATE"
+                        },
+                        {
+                            "name": "library",
+                            "type": "LIBRARY"
+                        }
+                    ],
+                    "samples": [
+                        "{library} opening hours {date}",
+                        "{library} opening hours on {date}",
+                        "{library} {date} opening hours",
+                        "opening hours {library} {date}",
+                        "opening hours of {library} {date}",
+                        "opening hours of {library} on {date}",
+                        
+                        "what's the opening hours of {library} {date}",
+                        "what's the opening hours of {library} on {date}",
+                        "what's the {library} opening hours on {date}",
+                        "what is the opening hours of {library} {date}",
+                        "what is the opening hours of {library} on {date}",
+                        "what is the {library} opening hours on {date}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "LIBRARY",
+                    "values": [
+                        {
+                            "id": "1",
+                            "name": {
+                                "value": "Grainger Library",
+                                "synonyms": [
+                                    "Grainger Engineering Library Information Center",
+                                    "Grainger"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "3",
+                            "name": {
+                                "value": "Mathematics Library"
+                            }
+                        },
+                        {
+                            "id": "5",
+                            "name": {
+                                "value": "Communications Library"
+                            }
+                        },
+                        {
+                            "id": "6",
+                            "name": {
+                                "value": "International and Area Studies Library"
+                            }
+                        },
+                        {
+                            "id": "9",
+                            "name": {
+                                "value": "A.C.E.S. Library",
+                                "synonyms": [
+                                    "Funk Library"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "11",
+                            "name": {
+                                "value": "Social Sciences, Health, and Education Library"
+                            }
+                        },
+                        {
+                            "id": "12",
+                            "name": {
+                                "value": "Architecture and Art Library",
+                                "synonyms": [
+                                    "Ricker Library"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "13",
+                            "name": {
+                                "value": "University Archives"
+                            }
+                        },
+                        {
+                            "id": "16",
+                            "name": {
+                                "value": "Map Library"
+                            }
+                        },
+                        {
+                            "id": "17",
+                            "name": {
+                                "value": "Undergraduate Library"
+                            }
+                        },
+                        {
+                            "id": "22",
+                            "name": {
+                                "value": "Rare Book and Manuscript Library"
+                            }
+                        },
+                        {
+                            "id": "23",
+                            "name": {
+                                "value": "Literatures and Languages Library"
+                            }
+                        },
+                        {
+                            "id": "27",
+                            "name": {
+                                "value": "Music and Performing Arts Library",
+                                "synonyms": [
+                                    "M.P.A.L"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "29",
+                            "name": {
+                                "value": "Law Library"
+                            }
+                        },
+                        {
+                            "id": "31",
+                            "name": {
+                                "value": "Illinois History and Lincoln Collections"
+                            }
+                        },
+                        {
+                            "id": "34",
+                            "name": {
+                                "value": "University High School Library"
+                            }
+                        },
+                        {
+                            "id": "37",
+                            "name": {
+                                "value": "Center for Children's Books"
+                            }
+                        },
+                        {
+                            "id": "44",
+                            "name": {
+                                "value": "Illinois Fire Service Institute Library"
+                            }
+                        },
+                        {
+                            "id": "50",
+                            "name": {
+                                "value": "Interlibrary Loan and Document Delivery"
+                            }
+                        },
+                        {
+                            "id": "56",
+                            "name": {
+                                "value": "Residence Hall Libraries - Urbana"
+                            }
+                        },
+                        {
+                            "id": "57",
+                            "name": {
+                                "value": "Scholarly Commons"
+                            }
+                        },
+                        {
+                            "id": "59",
+                            "name": {
+                                "value": "Sousa Archives & Center For American Music"
+                            }
+                        },
+                        {
+                            "id": "73",
+                            "name": {
+                                "value": "Veterinary Medicine Library"
+                            }
+                        },
+                        {
+                            "id": "75",
+                            "name": {
+                                "value": "History, Philosophy, and Newspaper Library"
+                            }
+                        },
+                        {
+                            "id": "76",
+                            "name": {
+                                "value": "Chemistry Library"
+                            }
+                        },
+                        {
+                            "id": "80",
+                            "name": {
+                                "value": "Main Library"
+                            }
+                        },
+                        {
+                            "id": "81",
+                            "name": {
+                                "value": "Student Life and Culture Archives",
+                                "synonyms": [
+                                    "Archives Research Center"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "82",
+                            "name": {
+                                "value": "Residence Hall Libraries - Ikenberry"
+                            }
+                        },
+                        {
+                            "id": "83",
+                            "name": {
+                                "value": "Oak Street Library"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
